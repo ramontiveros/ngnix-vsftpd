@@ -6,6 +6,6 @@ RUN apt-get update && apt-get install -y nginx vsftpd
 
 EXPOSE 21 80
 
-COPY run.sh /usr/sbin/
+COPY start.sh /usr/sbin/
 
-CMD ["/usr/sbin/run.sh"]
+CMD ["/usr/sbin/start.sh"]
