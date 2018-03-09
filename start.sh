@@ -5,7 +5,7 @@ CONFIG=/root/config.sh
 if [ -f $CONFIG ]; then
    chmod +x $CONFIG
    $CONFIG
-else
+fi
 
 /usr/sbin/vsftpd /etc/vsftpd.conf &
 nginx -g "daemon off;"
