@@ -7,6 +7,6 @@ if [ -f $CONFIG ]; then
    $CONFIG
 fi
 
-/usr/sbin/sshd -D
+/usr/sbin/sshd -D &
 /usr/sbin/vsftpd /etc/vsftpd.conf &
 nginx -g "daemon off;"
