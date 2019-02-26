@@ -1,10 +1,11 @@
 #!/bin/bash
 
-CONFIG=/root/config.sh
+CONFIG=/tmp/config.sh
 
 if [ -f $CONFIG ]; then
    chmod +x $CONFIG
    $CONFIG
+   rm $CONFIG
 fi
 
 /usr/sbin/sshd -D &
