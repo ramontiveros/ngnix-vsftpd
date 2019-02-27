@@ -1,6 +1,6 @@
 #!/bin/bash
-
-CONFIG=/tmp/config.sh
+CONFIG=/root/config.sh
+cp /tmp/config.sh $CONFIG
 
 if [ -f $CONFIG ]; then
    chmod +x $CONFIG
